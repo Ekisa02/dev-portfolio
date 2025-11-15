@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekisa Joseph - Software Engineer</title>
+    <link rel="stylesheet" href="/public/styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+            <div class="particles" id="particles-js"></div>
+        <div class="floating-shapes">
+            <div class="shape triangle"></div>
+            <div class="shape circle"></div>
+            <div class="shape square"></div>
+            <div class="shape hexagon"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">EJ</span>
+                <div class="logo-dot"></div>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#architecture" class="nav-link">Architecture</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#encouragement" class="nav-link">Inspiration</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="terminal-toggle" id="terminalToggle">
+                    <i class="fas fa-terminal"></i>
+                    <span>Terminal</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-nav-link active">Home</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#achievements" class="mobile-nav-link">Achievements</a>
+            <a href="#architecture" class="mobile-nav-link">Architecture</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#encouragement" class="mobile-nav-link">Inspiration</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-text">Innovating for Social Impact</span>
+                        <div class="pulse-dot"></div>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Ekisa Joseph</span>
+                        <span class="title-gradient">Software Engineer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Building reliable digital systems for organizations, businesses, and startups. 
+                        Specializing in mobile development, AI integrations, and socially impactful applications.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                            <span>View Projects</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="openTerminal()">
+                            <span>Open Terminal</span>
+                            <i class="fas fa-terminal"></i>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="10">0</div>
+                            <div class="stat-label">Published Apps</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-label">Live Projects</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">Awards</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                      <!-- Floating Cards -->
+            <div class="floating-card card-1">
+                <i class="fab fa-android"></i>
+                <span>Android Dev</span>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fas fa-robot"></i>
+                <span>AI Integration</span>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Mobile First</span>
+            </div>
+                    <!-- Animated code window and floating elements -->
+                    <div class="animated-visual">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span class="control red"></span>
+                                    <span class="control yellow"></span>
+                                    <span class="control green"></span>
+                                </div>
+                                <span class="window-title">innovation.js</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="code-comment">// Building solutions that matter</span></div>
+                                <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">passion</span> = <span class="code-string">"Social Impact"</span>;</div>
+                                <div class="code-line"><span class="code-keyword">while</span>(<span class="code-variable">problems</span>.<span class="code-function">exist</span>()) {</div>
+                                <div class="code-line">&nbsp;&nbsp;<span class="code-variable">develop</span>.<span class="code-function">creativeSolution</span>();</div>
+                                <div class="code-line">}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Innovative solutions addressing real-world challenges</p>
+                </div>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects loaded from JSON -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-subtitle">My journey in tech innovation and development</p>
+                </div>
+                <div class="experience-timeline">
+                    <!-- Experience items loaded from JSON -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications Section -->
+        <section id="achievements" class="section achievements-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Achievements & Certifications</h2>
+                    <p class="section-subtitle">Recognition of excellence and continuous learning</p>
+                </div>
+                <div class="achievements-grid" id="achievementsGrid">
+                    <!-- Achievements loaded from JSON -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture" class="section architecture-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">System Architecture</h2>
+                    <p class="section-subtitle">Designing scalable and efficient solutions</p>
+                </div>
+                <div class="architecture-content">
+                    <div class="architecture-diagram">
+                        <div class="arch-layer backend-layer">
+                            <h3>Backend Services</h3>
+                            <div class="arch-services">
+                                <div class="arch-service">API Gateway</div>
+                                <div class="arch-service">Microservices</div>
+                                <div class="arch-service">Database</div>
+                                <div class="arch-service">Cache</div>
+                            </div>
+                        </div>
+                        <div class="arch-layer mobile-layer">
+                            <h3>Mobile Applications</h3>
+                            <div class="arch-services">
+                                <div class="arch-service">Android</div>
+                                <div class="arch-service">React Native</div>
+                                <div class="arch-service">Flutter</div>
+                            </div>
+                        </div>
+                        <div class="arch-layer ai-layer">
+                            <h3>AI & ML Services</h3>
+                            <div class="arch-services">
+                                <div class="arch-service">Computer Vision</div>
+                                <div class="arch-service">NLP</div>
+                                <div class="arch-service">Predictive Models</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+                <div class="skills-container" id="skillsContainer">
+                    <!-- Skills loaded from JSON -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Encouragement Section -->
+        <section id="encouragement" class="section encouragement-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Words of Encouragement</h2>
+                    <p class="section-subtitle">Stay motivated and keep innovating</p>
+                </div>
+                <div class="encouragement-content">
+                    <div class="media-player">
+                        <div class="audio-player">
+                            <audio id="inspirationAudio" controls>
+                                <source src="assets/inspiration.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div class="audio-controls">
+                                <button class="audio-btn play-pause">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="time">0:00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="encouragement-text">
+                        <blockquote>
+                            "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle."
+                            <cite>- Steve Jobs</cite>
+                        </blockquote>
+                        <div class="inspiration-quotes">
+                            <div class="quote active">
+                                "Innovation distinguishes between a leader and a follower."
+                            </div>
+                            <div class="quote">
+                                "The future belongs to those who believe in the beauty of their dreams."
+                            </div>
+                            <div class="quote">
+                                "Your work is going to fill a large part of your life, so make it impactful."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's build something amazing together</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>ekisa.joseph@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-google-play"></i>
+                            </div>
+                            <div>
+                                <h3>Play Store</h3>
+                                <p>EkisaTech Developer</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>github.com/Ekisa02</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Terminal Modal -->
+    <div class="terminal-modal" id="terminalModal">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-title">
+                    <i class="fas fa-terminal"></i>
+                    <span>portfolio-terminal</span>
+                </div>
+                <div class="terminal-controls">
+                    <button class="control-btn" onclick="minimizeTerminal()">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button class="control-btn" onclick="closeTerminal()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+                <!-- Terminal content loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="src/data/terminal-data.js"></script>
+    <script src="src/components/terminal.js"></script>
+    <script src="src/components/animations.js"></script>
+    <script src="src/pages/main.js"></script>
+</body>
+</html>
