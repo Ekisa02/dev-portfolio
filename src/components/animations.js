@@ -187,3 +187,133 @@ function scrollToSection(sectionId) {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { ScrollAnimations, ParticleBackground, TypingAnimation };
 }
+
+
+
+// Typing effect for badge
+class TypingEffect {
+    constructor(element, texts, speed = 100, pause = 2000) {
+        this.element = element;
+        this.texts = texts;
+        this.speed = speed;
+        this.pause = pause;
+        this.textIndex = 0;
+        this.charIndex = 0;
+        this.currentText = '';
+        this.isDeleting = false;
+        this.type();
+    }
+
+    type() {
+        const current = this.textIndex % this.texts.length;
+        const fullText = this.texts[current];
+
+        if (this.isDeleting) {
+            this.currentText = fullText.substring(0, this.charIndex - 1);
+            this.charIndex--;
+        } else {
+            this.currentText = fullText.substring(0, this.charIndex + 1);
+            this.charIndex++;
+        }
+
+        this.element.textContent = this.currentText;
+
+        let typeSpeed = this.speed;
+
+        if (this.isDeleting) {
+            typeSpeed /= 2;
+        }
+
+        if (!this.isDeleting && this.charIndex === fullText.length) {
+            typeSpeed = this.pause;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.charIndex === 0) {
+            this.isDeleting = false;
+            this.textIndex++;
+            typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+    }
+}
+
+// Enhanced badge text rotation with colors
+class BadgeTextRotator {
+    constructor(badgeElement, badgeTextElement, texts) {
+        this.badge = badgeElement;
+        this.badgeText = badgeTextElement;
+        this.texts = texts;
+        this.currentIndex = 0;
+        this.init();
+    }
+
+    init() {
+        this.rotateText();
+        setInterval(() => this.rotateText(), 3000);
+    }
+
+    rotateText() {
+        const current = this.texts[this.currentIndex];
+        
+        // Add fade out effect
+        this.badge.style.opacity = '0';
+        this.badge.style.borderColor = current.color;
+        
+        setTimeout(() => {
+            this.badgeText.textContent = current.text;
+            this.badge.style.opacity = '1';
+            
+            // Update pulse dot color
+            const pulseDot = this.badge.querySelector('.pulse-dot');
+            if (pulseDot) {
+                pulseDot.style.backgroundColor = current.color;
+            }
+        }, 300);
+
+        this.currentIndex = (this.currentIndex + 1) % this.texts.length;
+    }
+}
+
+// Initialize typing effects when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initializeTypingEffects();
+});
+
+function initializeTypingEffects() {
+    const badgeText = document.querySelector('.badge-text');
+    if (badgeText) {
+        const texts = [
+            "🚀 Innovating for Social Impact",
+            "📱 Mobile & AI Specialist", 
+            "⚡ Building Scalable Solutions",
+            "🌍 Tech for Good Advocate",
+            "💻 Open Source Contributor"
+        ];
+        new TypingEffect(badgeText, texts, 80, 2000);
+    }
+
+    // Alternative: Color-changing badge rotation
+    // initializeBadgeRotation();
+}
+
+function initializeBadgeRotation() {
+    const badge = document.querySelector('.hero-badge');
+    const badgeText = document.querySelector('.badge-text');
+    
+    if (badge && badgeText) {
+        const badgeTexts = [
+            { text: "🚀 Innovating for Social Impact", color: "#10b981" },
+            { text: "📱 Mobile & AI Specialist", color: "#3b82f6" },
+            { text: "⚡ Building Scalable Solutions", color: "#f59e0b" },
+            { text: "🌍 Tech for Good Advocate", color: "#8b5cf6" },
+            { text: "💻 Open Source Contributor", color: "#ef4444" }
+        ];
+
+        new BadgeTextRotator(badge, badgeText, badgeTexts);
+    }
+}
+
+// Export for use in other files
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { TypingEffect, BadgeTextRotator, initializeTypingEffects };
+}
