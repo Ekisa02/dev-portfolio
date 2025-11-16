@@ -452,7 +452,7 @@ const terminalData = {
       icon: "medal",
       certificateId: "UIC-2023-002",
       certificateImage:
-        "/public/files/uoe-competion.pdf",
+        "/pages/files/uoe-competion.pdf",
     },
     {
       id: 3,
@@ -463,7 +463,7 @@ const terminalData = {
         "Presented mobile innovations and developments to academic and industry professionals.",
       icon: "microphone",
       certificateId: "MIP-2024-015",
-      certificate: "assets/certificates/presenter-certificate.jpg",
+      certificate: "pages/files/unesco-cert.pdf",
     },
     {
       id: 4,
@@ -474,7 +474,7 @@ const terminalData = {
         "Certified in Intellectual Property rights and patent processes for tech innovations.",
       icon: "file-certificate",
       certificateId: "PWC-2023-008",
-      certificate: "assets/certificates/patent-workshop-certificate.jpg",
+      certificate: "pages/files/Cormazialization.pdf",
     },
     {
       id: 5,
