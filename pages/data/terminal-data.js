@@ -519,7 +519,7 @@ const terminalData = {
       "organization": "Kenya AI Summit & Expo",
       "date": "2025",
       "description": "Participated in the Kenya AI Summit, engaging in workshops, networking sessions, and live demonstrations on the future of artificial intelligence, data science, and machine learning in Kenya.",
-      "icon": "cpu",
+      "icon": "graduation-cap",
       "certificateId": null,
       "certificateImage": "docs/files/AIsummit.jpeg"
     },
@@ -539,10 +539,8 @@ const terminalData = {
     "Mobile Development": [
       "Android",
       "React Native",
-      "Flutter",
       "Kotlin",
       "Java",
-      "Dart",
     ],
     "AI & Machine Learning": [
       "TensorFlow",
@@ -556,8 +554,8 @@ const terminalData = {
       "Python",
       "Firebase",
       "REST APIs",
-      "GraphQL",
       "MongoDB",
+      "Supabase",
     ],
     "Cloud & DevOps": [
       "AWS",
@@ -576,7 +574,6 @@ const terminalData = {
       "Google Play Console",
     ],
     "Architecture & Design": [
-      "MVVM",
       "Clean Architecture",
       "Microservices",
       "API Design",
