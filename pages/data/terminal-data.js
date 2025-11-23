@@ -312,6 +312,99 @@ const terminalData = {
   projects: [
     {
       id: 1,
+      title: "AutoExpenseFlow AI Agent",
+      description:
+        "Enterprise AI agent that automates invoice processing, policy enforcement, and financial system integration.",
+      detailedDescription:
+        "An intelligent AI agent built on IBM watsonx Orchestrate that automates corporate expense processing end-to-end. Reads invoices and receipts, extracts structured data, validates against company spending policies, integrates with ERP systems, and generates compliance reports - reducing manual processing time by 80% while improving accuracy.",
+      technologies: [
+        "IBM watsonx Orchestrate",
+        "IBM Watsonx.ai Foundation Models",
+        "IBM Cloud Object Storage",
+        "IBM Db2 on Cloud",
+        "REST APIs",
+        "AI/ML",
+        "Document Processing",
+        "ServiceNow/SAP Integration",
+        "Python",
+        "Cloud Computing",
+      ],
+      projectLink: "https://cloud.ibm.com/[your-agent-link]",
+      githubLink: "https://github.com/Ekisa02/Expenseflow-agent",
+      status: "Deployed on IBM Cloud",
+      role: "AI Architect & Lead Developer",
+      features: [
+        "AI-powered document extraction and data parsing",
+        "Real-time policy validation and compliance checking",
+        "Automated ERP system integration",
+        "Human-in-the-loop escalation for exceptions",
+        "Multi-currency expense processing",
+        "Automated audit trail generation",
+        "Weekly expense reporting and analytics",
+        "Duplicate detection and fraud prevention",
+      ],
+      impact:
+        "Reduces expense processing time from 15 minutes to 30 seconds per invoice, eliminates manual errors, ensures policy compliance, and provides real-time spending visibility for enterprises.",
+      keywords: [
+        "autoexpense",
+        "ai",
+        "agent",
+        "ibm",
+        "watsonx",
+        "expense",
+        "automation",
+        "enterprise",
+      ],
+    },
+    {
+      id: 2,
+      title: "UOE Safe Campus App",
+      description:
+        "Java-based safety application for University of Eldoret enabling incident reporting, emergency alerts, and campus security resources.",
+      detailedDescription:
+        "A comprehensive safety and security application designed specifically for the University of Eldoret community. The app provides instant incident reporting capabilities, real-time emergency alerts, and quick access to campus security resources. Built with pure Java, it offers a reliable and efficient platform for students, staff, and visitors to enhance campus safety through technology-driven solutions. Currently available on Google Play Store for closed testing with select university users.",
+      technologies: [
+        "Java",
+        "Android SDK",
+        "Firebase",
+        "Google Maps API",
+        "Push Notifications",
+        "RESTful APIs",
+        "GPS Integration",
+        "Local Database",
+        "Google Play Console",
+      ],
+      projectLink:
+        "https://play.google.com/apps/testing/com.joseph.uoe_safe",
+      githubLink: "https://github.com/Ekisa02",
+      status: "Live on Google Play (Closed Testing)",
+      role: "Lead Java Developer & Security Architect",
+      features: [
+        "Real-time incident reporting with GPS location tagging",
+        "Emergency alert system with push notifications",
+        "Campus security resources and contact directory",
+        "Interactive campus maps with safe zones",
+        "Anonymous reporting options for sensitive cases",
+        "Quick-access emergency buttons",
+        "Safety tips and prevention guidelines",
+        "Multi-language support for diverse campus community",
+      ],
+      impact:
+        "Enhancing campus safety by providing 24/7 security access, reducing incident response time by 60%, and creating a safer environment for over 15,000 students and staff members through deployed mobile technology.",
+      keywords: [
+        "uoe",
+        "safe",
+        "campus",
+        "security",
+        "java",
+        "eldoret",
+        "university",
+        "safety",
+        "playstore",
+      ],
+    },
+    {
+      id: 3,
       title: "WEE Gender Tracker",
       description:
         "Mobile application tracking gender-based activities and policies with real-time community feedback.",
@@ -342,7 +435,7 @@ const terminalData = {
       keywords: ["wee", "gender", "tracker", "policy"],
     },
     {
-      id: 2,
+      id: 4,
       title: "AgroShield360° App",
       description:
         "AI-powered mobile application for crop disease detection and farm management.",
@@ -373,7 +466,42 @@ const terminalData = {
       keywords: ["agro", "shield", "360", "farm", "agriculture", "ai"],
     },
     {
-      id: 3,
+  id: 5,
+  title: "Eldoret Green Future Alliance Website",
+  description:
+    "Community environmental conservation platform promoting tree planting, climate advocacy, and youth engagement in sustainability initiatives.",
+  detailedDescription:
+    "A responsive website serving as the digital hub for Eldoret Green Future Alliance - a community-driven environmental organization. The platform showcases ongoing conservation projects, tree planting initiatives, and climate advocacy programs while providing resources for community involvement. Built with modern web technologies and hosted on Vercel, it effectively communicates the alliance's mission to foster sustainability and empower youth in environmental conservation efforts across Eldoret and surrounding regions.",
+  technologies: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Vercel",
+    "Responsive Design",
+    "Git",
+    "Mobile-First Approach"
+  ],
+  projectLink: "https://eldoretgreenfutureecoalliance.vercel.app",
+  githubLink: "https://github.com/Ekisa02/Environmental-website",
+  status: "Live on Vercel",
+  role: "Full-Stack Developer & UI/UX Designer",
+  features: [
+    "Responsive design for all devices",
+    "Project showcase for environmental initiatives",
+    "Tree planting campaign information and registration",
+    "Climate advocacy resources and updates",
+    "Youth engagement program details",
+    "Community contact and collaboration forms",
+    "Interactive navigation and smooth scrolling",
+    "Optimized performance and fast loading"
+  ],
+  impact:
+    "Serving as the primary digital presence for environmental advocacy in Eldoret, reaching 5,000+ monthly visitors, facilitating community participation in conservation projects, and increasing youth engagement in sustainability programs by 40%.",
+  keywords: ["eldoret", "green", "environment", "conservation", "sustainability", "tree planting", "climate", "youth", "vercel"]
+}
+    ,
+    {
+      id: 6,
       title: "JusticeNet App",
       description:
         "Legal assistance and rights awareness platform for underserved communities.",
@@ -434,118 +562,122 @@ const terminalData = {
     },
   ],
 
-  "achievements": [
+  achievements: [
+    {
+      id: 1,
+      title: "Mobile App Development Program Completion",
+      organization: "KNUTCOM/UNESCO",
+      date: "2023",
+      description:
+        "Completed intensive mobile application development program with focus on social impact solutions.",
+      icon: "graduation-cap",
+      certificateId: "MAD-2023-012",
+      certificateImage: "/docs/files/unesco.jpeg",
+    },
+    {
+      id: 2,
+      title: "3rd Place - Hult Prize On-Campus",
+      organization: "Hult Prize - University of Eldoret",
+      date: "February 26, 2025",
+      description:
+        "Achieved third-best position for the innovation 'MTICARBO' in the 2024-2025 Hult Prize On-Campus Program.",
+      icon: "medal",
+      certificateId: null,
+      certificateImage: "docs/files/Hultprize.jpeg",
+    },
 
-
     {
-      "id": 1,
-      "title": "Mobile App Development Program Completion",
-      "organization": "KNUTCOM/UNESCO",
-      "date": "2023",
-      "description": "Completed intensive mobile application development program with focus on social impact solutions.",
-      "icon": "graduation-cap",
-      "certificateId": "MAD-2023-012",
-      "certificateImage": "/docs/files/unesco.jpeg"
-    },
-     {
-      "id": 2,
-      "title": "3rd Place - Hult Prize On-Campus",
-      "organization": "Hult Prize - University of Eldoret",
-      "date": "February 26, 2025",
-      "description": "Achieved third-best position for the innovation 'MTICARBO' in the 2024-2025 Hult Prize On-Campus Program.",
-      "icon": "medal",
-      "certificateId": null,
-      "certificateImage": "docs/files/Hultprize.jpeg"
-    },
-
-    {
-      "id": 3,
-      "title": "Youth Innovative Technologies Training",
-      "organization": "Moi University, KNATCOM & UNESCO",
-      "date": "Jan 29 - Feb 16, 2024",
-      "description": "Participated in a three-week training competition on enhancing the capacity of youth on innovative technologies.",
-      "icon": "graduation-cap",
-      "certificateId": null,
-      "certificateImage": "docs/files/unesco.jpeg"
+      id: 3,
+      title: "Youth Innovative Technologies Training",
+      organization: "Moi University, KNATCOM & UNESCO",
+      date: "Jan 29 - Feb 16, 2024",
+      description:
+        "Participated in a three-week training competition on enhancing the capacity of youth on innovative technologies.",
+      icon: "graduation-cap",
+      certificateId: null,
+      certificateImage: "docs/files/unesco.jpeg",
     },
     {
-      "id": 4,
-      "title": "Research to Commercialization Training",
-      "organization": "University of Eldoret",
-      "date": "October 14-15, 2024",
-      "description": "Participated in training focused on Design Thinking, Business Model Canvas, Intellectual Property Rights, and Pitching.",
-      "icon": "file-graduation-cap",
-      "certificateId": null,
-      "certificateImage": "docs/files/R&C.jpeg"
-    },
-     {
-      "id": 5,
-      "title": "National World Skills Kenya Representative",
-      "organization": "University of Eldoret",
-      "date": "2024",
-      "description": "Represented University of Eldoret at national competition showcasing mobile development skills and innovations.",
-      "icon": "trophy",
-      "certificateId": "WSK-2024-001",
-      "certificateImage": "docs/files/world-skills-certificate.jpg"
-    },
-     {
-      "id": 6,
-      "title": "Innovation Challenge Participant (Mticarbo)",
-      "organization": "University of Eldoret",
-      "date": "October 16-18, 2024",
-      "description": "Presented the 'Mticarbo' innovation in the 2nd Innovation Challenge on Digital Innovations for Social Sustainability during the 6th Annual Innovation Week.",
-      "icon": "graduation-cap",
-      "certificateId": null,
-      "certificateImage": "docs/files/2ndUOEchallenge.jpeg"
+      id: 4,
+      title: "Research to Commercialization Training",
+      organization: "University of Eldoret",
+      date: "October 14-15, 2024",
+      description:
+        "Participated in training focused on Design Thinking, Business Model Canvas, Intellectual Property Rights, and Pitching.",
+      icon: "file-graduation-cap",
+      certificateId: null,
+      certificateImage: "docs/files/R&C.jpeg",
     },
     {
-      "id": 7,
-      "title": "Certificate of Completion - Python",
-      "organization": "Kaggle",
-      "date": "September 28, 2025",
-      "description": "Successfully completed the 'Python' course on Kaggle, covering core programming concepts.",
-      "icon": "laptop-code",
-      "certificateId": null,
-      "certificateImage": "docs/files/Python.png"
+      id: 5,
+      title: "National World Skills Kenya Representative",
+      organization: "University of Eldoret",
+      date: "2024",
+      description:
+        "Represented University of Eldoret at national competition showcasing mobile development skills and innovations.",
+      icon: "trophy",
+      certificateId: "WSK-2024-001",
+      certificateImage: "docs/files/world-skills-certificate.jpg",
     },
     {
-      "id": 8,
-      "title": "Certificate of Completion - Intro to Machine Learning",
-      "organization": "Kaggle",
-      "date": "September 28, 2025",
-      "description": "Successfully completed the 'Intro to Machine Learning' course on Kaggle.",
-      "icon": "brain",
-      "certificateId": null,
-      "certificateImage": "docs/files/intro-to-ML.png"
-    },{
-      "id": 9,
-      "title": "Participant – Kenya AI Summit",
-      "organization": "Kenya AI Summit & Expo",
-      "date": "2025",
-      "description": "Participated in the Kenya AI Summit, engaging in workshops, networking sessions, and live demonstrations on the future of artificial intelligence, data science, and machine learning in Kenya.",
-      "icon": "graduation-cap",
-      "certificateId": null,
-      "certificateImage": "docs/files/AIsummit.jpeg"
+      id: 6,
+      title: "Innovation Challenge Participant (Mticarbo)",
+      organization: "University of Eldoret",
+      date: "October 16-18, 2024",
+      description:
+        "Presented the 'Mticarbo' innovation in the 2nd Innovation Challenge on Digital Innovations for Social Sustainability during the 6th Annual Innovation Week.",
+      icon: "graduation-cap",
+      certificateId: null,
+      certificateImage: "docs/files/2ndUOEchallenge.jpeg",
     },
     {
-      "id": 10,
-      "title": "Participant – EldoHub TechRun Hackathon (2nd Edition)",
-      "organization": "EldoHub / ICT Authority / Moi University",
-      "date": "2025",
-      "description": "Participated in the TechRun Hackathon where teams developed innovative solutions in AI, cybersecurity, agriculture, and digital transformation. Engaged in mentorship sessions and built a functional prototype presented during the final pitch.",
-      "icon": "code",
-      "certificateId": null,
-      "certificateImage": "docs/files/Techrun.jpeg"
-    }
+      id: 7,
+      title: "Certificate of Completion - Python",
+      organization: "Kaggle",
+      date: "September 28, 2025",
+      description:
+        "Successfully completed the 'Python' course on Kaggle, covering core programming concepts.",
+      icon: "laptop-code",
+      certificateId: null,
+      certificateImage: "docs/files/Python.png",
+    },
+    {
+      id: 8,
+      title: "Certificate of Completion - Intro to Machine Learning",
+      organization: "Kaggle",
+      date: "September 28, 2025",
+      description:
+        "Successfully completed the 'Intro to Machine Learning' course on Kaggle.",
+      icon: "brain",
+      certificateId: null,
+      certificateImage: "docs/files/intro-to-ML.png",
+    },
+    {
+      id: 9,
+      title: "Participant – Kenya AI Summit",
+      organization: "Kenya AI Summit & Expo",
+      date: "2025",
+      description:
+        "Participated in the Kenya AI Summit, engaging in workshops, networking sessions, and live demonstrations on the future of artificial intelligence, data science, and machine learning in Kenya.",
+      icon: "graduation-cap",
+      certificateId: null,
+      certificateImage: "docs/files/AIsummit.jpeg",
+    },
+    {
+      id: 10,
+      title: "Participant – EldoHub TechRun Hackathon (2nd Edition)",
+      organization: "EldoHub / ICT Authority / Moi University",
+      date: "2025",
+      description:
+        "Participated in the TechRun Hackathon where teams developed innovative solutions in AI, cybersecurity, agriculture, and digital transformation. Engaged in mentorship sessions and built a functional prototype presented during the final pitch.",
+      icon: "code",
+      certificateId: null,
+      certificateImage: "docs/files/Techrun.jpeg",
+    },
   ],
 
   skills: {
-    "Mobile Development": [
-      "Android",
-      "React Native",
-      "Kotlin",
-      "Java",
-    ],
+    "Mobile Development": ["Android", "React Native", "Kotlin", "Java"],
     "AI & Machine Learning": [
       "TensorFlow",
       "PyTorch",
