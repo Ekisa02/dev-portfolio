@@ -674,6 +674,28 @@ const terminalData = {
       certificateId: null,
       certificateImage: "docs/files/Techrun.jpeg",
     },
+    {
+  id: 11,
+  title: "AI Agents Intensive Course Graduate",
+  organization: "Google & Kaggle",
+  date: "November 2025",
+  description:
+    "Completed Google's 5-day intensive AI Agents course, mastering agent architectures, tools, orchestration, memory systems, and production deployment. Built and deployed sophisticated multi-agent systems through hands-on codelabs and capstone project.",
+  icon: "robot",
+  certificateId: "AI-AGENTS-2025",
+  certificateImage: "docs/files/gmail-Congratulations!.pdf",
+},
+{
+  id: 12,
+  title: "Team Lead – Agentic AI Hackathon with IBM watsonx Orchestrate",
+  organization: "IBM",
+  date: "2025",
+  description:
+    "Led a team in developing AutoExpenseFlow AI Agent - an enterprise-grade solution for automated expense processing. Orchestrated the end-to-end development from concept to deployment on IBM Cloud, integrating Watsonx Orchestrate, document processing, and ERP systems.",
+  icon: "trophy",
+  certificateId: null,
+  certificateImage: "docs/files/IBM-hackathon.png",
+},
   ],
 
   skills: {
